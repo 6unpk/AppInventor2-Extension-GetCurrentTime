@@ -72,4 +72,10 @@ public class GetCurrentTime extends AndroidNonvisibleComponent implements Compon
 		return calendar.get(Calendar.SECOND);
 	}
 
+	@SimpleProperty(category = PropertyCategory.BEHAVIOR)
+	public int getDayOfWeek(){
+		calendar = new GregorianCalendar();
+		return calendar.get(Calendar.DAY_OF_WEEK);
+	}
+
 }
